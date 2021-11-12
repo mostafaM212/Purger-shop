@@ -1,0 +1,15 @@
+
+.open{
+    transform: translateX(0) ;
+}
+
+.close {
+    transform: translateX(-100%) ;
+}
+
+@media(min-width : 499px){
+    .phoneOnly {
+        display: none;
+        transition: transform 0.3 ease-out ;
+    }
+}

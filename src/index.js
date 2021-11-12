@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import {BrowserRouter} from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
+import 'tailwindcss/dist/tailwind.css' ;
+import 'react-toastify/dist/ReactToastify.css'
+import init from "./LogService";
+import App from "./App";
+
+init()
 
 ReactDOM.render(
-  <React.StrictMode>
+  <BrowserRouter>
     <App />
-  </React.StrictMode>,
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
